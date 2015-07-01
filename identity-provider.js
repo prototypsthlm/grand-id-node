@@ -1,7 +1,7 @@
 var grandId = require('./grand-id');
 
 function IdentityProvider(id, config) {
-	this._config = config;	
+	this._config = config;
 	this.id = id;
 }
 

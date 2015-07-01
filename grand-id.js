@@ -83,7 +83,7 @@ function makeRequest(url, query, callback) {
 			var obj = JSON.parse(body);
 			log('json response');
 			log(obj);
-		    callback(undefined, obj);
+			callback(undefined, obj);
 		} else {
 			callback(error);
 		}
