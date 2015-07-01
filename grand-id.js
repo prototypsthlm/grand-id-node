@@ -11,7 +11,7 @@ var config = {
 	identityProviders: {}
 };
 
-var GrandID = {	
+var GrandID = {
 	log: log,
 	setConfig: setConfig,
 	createIdentityProvider: createIdentityProvider,
@@ -47,11 +47,11 @@ function setConfig(userConfig) {
 			userConfig.identityProviders[providerKey] = _.defaults(identityProviderConfig, defaults);			
 		});
 	}
-	config = _.defaults(userConfig, config);	
+	config = _.defaults(userConfig, config);
 }
 
 function createIdentityProvider(identityProviderId) {
-	var ipConfig = identityProviderConfig(identityProviderId);	
+	var ipConfig = identityProviderConfig(identityProviderId);
 	var IdentityProvider = require('./identity-provider');
 	return new IdentityProvider(identityProviderId, ipConfig);
 }
@@ -65,7 +65,7 @@ function validateQuery(query) {
 	});
 	if(missing.length > 0) {
 		new Error('Missing query params: ' + missing.join(', '));
-	}	
+	}
 }
 function makeRequest(url, query, callback) {
 	validateQuery(query);
