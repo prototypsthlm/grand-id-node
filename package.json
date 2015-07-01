@@ -1,0 +1,21 @@
+{
+  "name": "grand-id",
+  "description": "Grand ID-API helper. With Grand ID you can authenticate against several identity providers",
+  "version": "0.0.1",
+  "author": [
+    {
+      "name": "Mårten Norén",
+      "email": "marten.noren@prototyp.se"
+    }
+  ],
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/prototypsthlm/grand-id-node"
+  },
+  "main": "./grand-id.js",
+  "private": true,
+  "dependencies": {
+    "lodash": "~3.9.3",
+    "request": "~2.58.0"
+  }
+}
